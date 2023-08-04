@@ -1,0 +1,23 @@
+{
+	"name": "@allejo/tsconfig",
+	"version": "1.0.0",
+	"description": "A common tsconfig.json file for @allejo's personal projects",
+	"homepage": "https://github.com/allejo/js-utils-monorepo#readme",
+	"bugs": {
+		"url": "https://github.com/allejo/js-utils-monorepo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/allejo/js-utils-monorepo"
+	},
+	"license": "MIT",
+	"author": "Vladimir \"allejo\" Jimenez",
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"prettier": "@allejo/prettier-config",
+	"devDependencies": {
+		"@allejo/prettier-config": "^1.0.0",
+		"prettier": "^3.0.1"
+	}
+}
