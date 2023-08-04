@@ -1,0 +1,25 @@
+{
+	"name": "@allejo/prettier-config",
+	"version": "1.0.0",
+	"description": "A shared Prettier configuration for @allejo's personal projects",
+	"homepage": "https://github.com/allejo/js-utils-monorepo#readme",
+	"bugs": {
+		"url": "https://github.com/allejo/js-utils-monorepo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/allejo/js-utils-monorepo"
+	},
+	"license": "MIT",
+	"author": "Vladimir \"allejo\" Jimenez",
+	"main": "index.js",
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"prettier": "./index.js",
+	"peerDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
+		"prettier": "^3.0.1",
+		"prettier-plugin-packagejson": "^2.4.5"
+	}
+}
