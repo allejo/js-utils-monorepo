@@ -6,14 +6,14 @@ module.exports = {
 	semi: true,
 	endOfLine: 'auto',
 	importOrder: [
-		// library names
-		'^(?!\.+\/)[^.]+$',
+		// library imports
+		'^[^.]+?$',
 
 		// relative paths without extensions
-		'^[.\/]+[^.]+$',
+		'^[./]+[^.]+$',
 
 		// any JS/TS/JSX/TSX extensions
-		'\w.*\.([jt]sx?)$',
+		'\\w.*.([jt]sx?)$',
 
 		// any other extension
 		'\\.[a-z]+$',
