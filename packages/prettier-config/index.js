@@ -6,9 +6,16 @@ module.exports = {
 	semi: true,
 	endOfLine: 'auto',
 	importOrder: [
-		'^(?!\\.+\\/).*(?<!\\.(s?css))$',
-		'^[./]+[^.]+$',
-		'^\\w.*\\.[a-z]+$',
+		// library names
+		'^(?!\.+\/)[^.]+$',
+
+		// relative paths without extensions
+		'^[.\/]+[^.]+$',
+
+		// any JS/TS/JSX/TSX extensions
+		'\w.*\.([jt]sx?)$',
+
+		// any other extension
 		'\\.[a-z]+$',
 	],
 	importOrderSeparation: true,
