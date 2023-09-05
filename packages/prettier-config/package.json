@@ -1,6 +1,6 @@
 {
 	"name": "@allejo/prettier-config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A shared Prettier configuration for @allejo's personal projects",
 	"homepage": "https://github.com/allejo/js-utils-monorepo#readme",
 	"bugs": {
