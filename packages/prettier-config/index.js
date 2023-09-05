@@ -18,8 +18,10 @@ module.exports = {
 		// any other extension
 		'\\.[a-z]+$',
 	],
-	importOrderSeparation: true,
+	importOrderCaseInsensitive: true,
 	importOrderParserPlugins: ['jsx', 'typescript'],
+	importOrderSeparation: true,
+	importOrderSortSpecifiers: true,
 	plugins: [
 		'@trivago/prettier-plugin-sort-imports',
 		'prettier-plugin-packagejson',

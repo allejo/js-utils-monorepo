@@ -12,7 +12,7 @@ describe('Expected Prettier output', () => {
             import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
             import App from './App.tsx';
             import { FilteredJson, JsonObject } from '../contracts.ts';
-            import { applyJMESPath, DisableGrammarlyProps } from '../utilities';
+            import { DisableGrammarlyProps, applyJMESPath } from '../utilities';
             import './App.css';
             import data from './something.json';
         `;
