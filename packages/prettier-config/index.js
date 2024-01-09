@@ -19,7 +19,7 @@ module.exports = {
 		'\\.[a-z]+$',
 	],
 	importOrderCaseInsensitive: true,
-	importOrderParserPlugins: ['jsx', 'typescript'],
+	importOrderParserPlugins: ['importAssertions', 'jsx', 'typescript'],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
 	plugins: [
