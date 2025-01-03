@@ -1,3 +1,12 @@
+const optionalPlugins = [];
+const optionalSettings = {};
+
+try {
+	import('prettier-plugin-tailwindcss');
+
+	optionalPlugins.push('prettier-plugin-tailwindcss');
+} catch (_) {}
+
 module.exports = {
 	tabWidth: 2,
 	useTabs: true,
@@ -22,8 +31,10 @@ module.exports = {
 	importOrderParserPlugins: ['importAssertions', 'jsx', 'typescript'],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
+	...optionalSettings,
 	plugins: [
 		'@trivago/prettier-plugin-sort-imports',
 		'prettier-plugin-packagejson',
+		...optionalPlugins,
 	],
 };

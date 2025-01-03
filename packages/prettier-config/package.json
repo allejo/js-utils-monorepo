@@ -1,6 +1,6 @@
 {
 	"name": "@allejo/prettier-config",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A shared Prettier configuration for @allejo's personal projects",
 	"homepage": "https://github.com/allejo/js-utils-monorepo#readme",
 	"bugs": {
@@ -29,5 +29,8 @@
 	},
 	"peerDependencies": {
 		"prettier": "^3"
+	},
+	"optionalDependencies": {
+		"prettier-plugin-tailwindcss": "^0.6.9"
 	}
 }
