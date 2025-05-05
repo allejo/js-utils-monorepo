@@ -2,7 +2,7 @@ const optionalPlugins = [];
 const optionalSettings = {};
 
 try {
-	import('prettier-plugin-tailwindcss');
+	require('prettier-plugin-tailwindcss');
 
 	optionalPlugins.push('prettier-plugin-tailwindcss');
 } catch (_) {}
