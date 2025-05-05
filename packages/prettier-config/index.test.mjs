@@ -15,11 +15,14 @@ describe('Expected Prettier output', () => {
             import { DisableGrammarlyProps, applyJMESPath } from '../utilities';
             import './App.css';
             import data from './something.json';
+            import MyPage from '@/lib/prisma';
         `;
 		const expected = dedent`
             import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
             import React from 'react';
             import ReactDOM from 'react-dom/client';
+            
+            import MyPage from '@/lib/prisma';
         
             import { applyJMESPath, DisableGrammarlyProps } from '../utilities';
         

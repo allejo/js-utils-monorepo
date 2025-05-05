@@ -16,7 +16,10 @@ module.exports = {
 	endOfLine: 'auto',
 	importOrder: [
 		// library imports
-		'^[^.]+?$',
+		'^(?!@\\/)[^.]+?$',
+
+		// Prefixed style imports (e.g. Next.js)
+		'^@\\/[^.]+?$',
 
 		// relative paths without extensions
 		'^[./]+[^.]+$',
