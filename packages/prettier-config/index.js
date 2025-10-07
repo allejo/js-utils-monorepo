@@ -2,9 +2,9 @@ const optionalPlugins = [];
 const optionalSettings = {};
 
 try {
-	require('prettier-plugin-tailwindcss');
+	const twcss = require('prettier-plugin-tailwindcss');
 
-	optionalPlugins.push('prettier-plugin-tailwindcss');
+	optionalPlugins.push(twcss);
 } catch (_) {}
 
 module.exports = {
@@ -36,8 +36,8 @@ module.exports = {
 	importOrderSortSpecifiers: true,
 	...optionalSettings,
 	plugins: [
-		'@trivago/prettier-plugin-sort-imports',
-		'prettier-plugin-packagejson',
+		require('@trivago/prettier-plugin-sort-imports'),
+		require('prettier-plugin-packagejson'),
 		...optionalPlugins,
 	],
 };
